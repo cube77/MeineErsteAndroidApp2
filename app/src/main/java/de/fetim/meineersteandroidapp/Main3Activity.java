@@ -9,12 +9,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class Main2Activity extends AppCompatActivity {
+public class Main3Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -27,17 +27,13 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
-
-        // Clicklistener for switching to MainActivity3
-        ((Button)findViewById(R.id.button3)).setOnClickListener(new View.OnClickListener() {
+        // Clicklistener for switching BACK to MainActivity2
+        ((Button)findViewById(R.id.button4)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View view){
-                Intent i = new Intent(Main2Activity.this, Main3Activity.class);
-                startActivity(i);
+                finish();
             }
         });
-
-
-    } //On Create
+    } //OnCreate
 
 }
