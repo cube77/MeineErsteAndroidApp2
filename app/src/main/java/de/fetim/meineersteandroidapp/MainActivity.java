@@ -54,18 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-   /*
-    // process the intent result from the Take-Picture Clicklistener event and view it on the imageview
-    @Override
-    protected void OnActivityResult (int requestCode, int resultCode, Intent data){
-        if(resultCode == RESULT_OK){
-            Bitmap photo = (Bitmap) data.getExtras().get("Data");
-            ((ImageView)findViewById(R.id.imageView)).setImageBitmap(photo);
-        }
-    }
-*/
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
