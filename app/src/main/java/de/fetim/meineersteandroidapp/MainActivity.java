@@ -40,6 +40,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(i, 0);
             }
         });
+
+        // Clicklistener for switching to MainActivity2
+        ((Button)findViewById(R.id.button2)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View view){
+                Intent i = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(i);
+            }
+        });
+
+
     } //OnCreate
 
     // process the intent result from the Take-Picture Clicklistener event and view it on the imageview
